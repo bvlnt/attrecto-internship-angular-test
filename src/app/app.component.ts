@@ -10,10 +10,18 @@ export class AppComponent {
 
   counter : number = 0;
 
+  disabled(){
+    if(this.counter==0){
+      return true;
+    }else{
+      return false;
+    }
+  }
+
   increase(){
     this.counter++;
   }
-  
+
   decrease(){
     if(this.counter==0){
       return;
