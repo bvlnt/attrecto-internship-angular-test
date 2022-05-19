@@ -4,9 +4,8 @@
     Attrecto - Angular internship program 2022 test - starter template
   </h4>
 </div>
-<div class="card-body">
-  {{counter}}
-  <app-button [buttonText]="'Increase'" (onClick)="increase()"></app-button>
-  <app-button [buttonText]="'Reduce'" (onClick)="decrease()" [isDisabled]="disabled()"></app-button>
-</div>
+<router-outlet>
+  <app-navbar></app-navbar>
+</router-outlet>
+
 

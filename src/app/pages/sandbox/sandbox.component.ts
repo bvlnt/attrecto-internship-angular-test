@@ -12,4 +12,26 @@ export class SandboxComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  counter: number = 0;
+
+  disabled() {
+    if (this.counter == 0) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+
+  increase() {
+    this.counter++;
+  }
+
+  decrease() {
+    if (this.counter == 0) {
+      return;
+    } else {
+      this.counter--;
+    }
+  }
+
 }
