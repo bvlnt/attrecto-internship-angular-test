@@ -1,0 +1,9 @@
+<ul class="movies">
+    <li *ngFor="let movie of movies">
+        <span class="badge">{{movie.id}}</span>
+        <span class="name">{{movie.title}}</span>
+        <span class="year">{{movie.year}}</span>
+        <span class="rating">{{movie.rating}}</span>
+        <img src="{{movie.thumbnail}}"/>
+    </li>
+</ul>

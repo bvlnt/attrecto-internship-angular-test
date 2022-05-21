@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { ButtonComponent } from './components/button/button.component';
 import { SandboxComponent } from './pages/sandbox/sandbox.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { MoviesComponent } from './pages/movies/movies.component';
 
 @NgModule({
   declarations: [
@@ -12,6 +13,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     ButtonComponent,
     SandboxComponent,
     NavbarComponent,
+    MoviesComponent,
   ],
   imports: [
     BrowserModule,
