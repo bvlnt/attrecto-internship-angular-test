@@ -1,5 +1,8 @@
-<div class="card-body">
-    {{counter}}
-    <app-button [buttonText]="'Increase'" (onClick)="increase()"></app-button>
-    <app-button [buttonText]="'Reduce'" (onClick)="decrease()" [isDisabled]="disabled()"></app-button>
+<div class="card">
+    <div class="card-body">
+        <h3>Counter: {{counter}}</h3>
+        <app-button [buttonText]="'Increase'" (onClick)="increase()"></app-button>
+        <app-button [buttonText]="'Reduce'" (onClick)="decrease()" [isDisabled]="disabled()"></app-button>
+    </div>
+    
 </div>
