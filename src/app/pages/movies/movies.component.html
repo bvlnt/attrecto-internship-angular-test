@@ -2,21 +2,16 @@
     <li *ngFor="let movie of movies" class="list-group-item container">
         <div class="row">
             <div class="col">
-                <span class="badge">{{movie.id}}</span>
-                <h4 class="name">{{movie.title}}</h4>
+                <h4 class="name pt-4">{{movie.id}}. {{movie.title}}</h4>
                 <div class="year">{{movie.year}}</div>
-                <div class="rating">Rating: {{movie.rating}}</div>
+                <div class="rating pb-4">Rating: {{movie.rating}}</div>
             </div>
             <div class="col" style="display: flex; justify-content:flex-end; align-items: center;">
-                <button class="btn btn-secondary btn-sm m-3"><i class="bi bi-pencil m-3"></i></button>
-                <button (click)="deleteMovie( movie )" class="btn btn-secondary btn-sm m-3"><i class="bi bi-trash3 m-3" ></i></button>              
+                <button class="btn btn-secondary btn-sm m-2 p-0"><i class="bi bi-pencil m-3"></i></button>
+                <button (click)="deleteMovie( movie )" class="btn btn-secondary btn-sm m-2 p-0"><i class="bi bi-trash3 m-3" ></i></button>              
                 <img class="m-3" src="{{movie.thumbnail}}" />
                 
             </div>
         </div>
-            
-        
-       
-        
     </li>
 </ul>
