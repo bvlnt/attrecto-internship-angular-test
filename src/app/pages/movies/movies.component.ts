@@ -16,6 +16,10 @@ export class MoviesComponent implements OnInit {
   this.movies = this.moviesService.getMovies();
   }
 
+  deleteMovie(movie: Movies): void {
+    this.movies = this.movies.filter(({ id }) => id !== movie.id);        
+  }
+
   constructor(private moviesService: MoviesService) { }
 
   ngOnInit(): void {
